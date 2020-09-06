@@ -2,12 +2,10 @@ module Node.FS.Aff.Mkdirp (mkdirp) where
 
 import Prelude
 
-import Data.Either (Either(..))
-import Effect.Aff (Aff, catchError, throwError, try)
+import Effect.Aff (Aff, catchError)
 import Effect.Class (liftEffect)
 import Effect.Exception (Error)
-import Node.FS.Aff (mkdir, stat)
-import Node.FS.Stats (isDirectory)
+import Node.FS.Aff (mkdir)
 import Node.Path (FilePath, dirname, resolve)
 
 foreign import isENOENT :: Error -> Boolean
