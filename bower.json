@@ -1,0 +1,26 @@
+{
+    "name": "purescript-open-mkdirp-aff",
+    "license": [
+        "Apache-2.0"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/purescript-open-community/purescript-open-mkdirp-aff"
+    },
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
+    ],
+    "dependencies": {
+        "purescript-aff": "^v6.0.0",
+        "purescript-console": "^v5.0.0",
+        "purescript-effect": "^v3.0.0",
+        "purescript-exceptions": "^v5.0.0",
+        "purescript-node-fs-aff": "^v7.0.0",
+        "purescript-node-path": "^v4.0.0",
+        "purescript-prelude": "^v5.0.0",
+        "purescript-psci-support": "^v5.0.0"
+    }
+}
