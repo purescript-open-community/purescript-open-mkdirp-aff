@@ -12,9 +12,8 @@ foreign import isENOENT :: Error -> Boolean
 
 handleError :: FilePath -> Error -> Aff FilePath
 handleError fullPath e =
-  if isENOENT e
-    then makeParent fullPath
-    else pure fullPath
+  if isENOENT e then makeParent fullPath
+  else pure fullPath
 
 makeParent :: FilePath -> Aff FilePath
 makeParent fullPath = do

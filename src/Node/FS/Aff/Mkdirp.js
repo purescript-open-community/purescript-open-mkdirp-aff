@@ -1,3 +1,3 @@
-exports.isENOENT = function (e) {
+export function isENOENT(e) {
   return e.code === "ENOENT"
 }
